@@ -27,11 +27,13 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package.json'
 
+      # Generate package-lock.json
+      - name: Generate package-lock.json
+        run: npm install --package-lock-only
+
       # Clean install dependencies
       - name: Install Dependencies
-        run: |
-          npm ci || npm install
-          echo "Dependencies installed successfully"
+        run: npm ci
 
       # Build the project
       - name: Build Project
