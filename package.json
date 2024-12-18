@@ -18,7 +18,6 @@
     "@types/jquery": "^3.5.29",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
-    "@types/vite": "^4.0.0",
     "@types/gsap": "^3.0.0",
     "@types/node": "^20.11.24",
     "typescript": "^4.9.5",
