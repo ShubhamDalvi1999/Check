@@ -32,23 +32,23 @@ const DataVisualization: React.FC = () => {
         </div>
         <div className="grid grid-cols-3 md:grid-cols-5 gap-8">
           <AnimatedIcon
-            icon={<img src="/icons/powerbi.svg" alt="Power BI" className="w-full h-full" />}
+            icon={<img src="/icons/powerbi-logo.png" alt="Power BI" className="w-full h-full" />}
             name="Power BI"
           />
           <AnimatedIcon
-            icon={<img src="/icons/tableau.svg" alt="Tableau" className="w-full h-full" />}
+            icon={<img src="/icons/tableau-logo.png" alt="Tableau" className="w-full h-full" />}
             name="Tableau"
           />
           <AnimatedIcon
-            icon={<img src="/icons/dax.svg" alt="DAX" className="w-full h-full" />}
+            icon={<img src="/icons/dax-logo.png" alt="DAX" className="w-full h-full" />}
             name="DAX"
           />
           <AnimatedIcon
-            icon={<img src="/icons/d3.svg" alt="D3.js" className="w-full h-full" />}
+            icon={<img src="/icons/d3-logo.png" alt="D3.js" className="w-full h-full" />}
             name="D3.js"
           />
           <AnimatedIcon
-            icon={<img src="/icons/plotly.svg" alt="Plotly" className="w-full h-full" />}
+            icon={<img src="/icons/plotly-logo.png" alt="Plotly" className="w-full h-full" />}
             name="Plotly"
           />
         </div>

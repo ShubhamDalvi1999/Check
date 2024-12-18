@@ -32,27 +32,27 @@ const MachineLearning: React.FC = () => {
         </div>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
           <AnimatedIcon
-            icon={<img src="/icons/python.svg" alt="Python" className="w-full h-full" />}
+            icon={<img src="/icons/python-logo.png" alt="Python" className="w-full h-full" />}
             name="Python"
           />
           <AnimatedIcon
-            icon={<img src="/icons/pyspark.svg" alt="PySpark" className="w-full h-full" />}
+            icon={<img src="/icons/pyspark-logo.png" alt="PySpark" className="w-full h-full" />}
             name="PySpark"
           />
           <AnimatedIcon
-            icon={<img src="/icons/tensorflow.svg" alt="TensorFlow" className="w-full h-full" />}
+            icon={<img src="/icons/tensorflow-logo.png" alt="TensorFlow" className="w-full h-full" />}
             name="TensorFlow"
           />
           <AnimatedIcon
-            icon={<img src="/icons/pytorch.svg" alt="PyTorch" className="w-full h-full" />}
+            icon={<img src="/icons/pytorch-logo.png" alt="PyTorch" className="w-full h-full" />}
             name="PyTorch"
           />
           <AnimatedIcon
-            icon={<img src="/icons/scikit-learn.svg" alt="Scikit-learn" className="w-full h-full" />}
+            icon={<img src="/icons/scikit-learn-logo.png" alt="Scikit-learn" className="w-full h-full" />}
             name="Scikit-learn"
           />
           <AnimatedIcon
-            icon={<img src="/icons/pandas.svg" alt="Pandas" className="w-full h-full" />}
+            icon={<img src="/icons/pandas-logo.png" alt="Pandas" className="w-full h-full" />}
             name="Pandas"
           />
         </div>

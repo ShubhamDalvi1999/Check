@@ -35,27 +35,27 @@ const DataCollection: React.FC = () => {
           </div>
           <div className="mt-12 grid grid-cols-3 md:grid-cols-6 gap-8">
             <AnimatedIcon
-              icon={<img src="/icons/aws.svg" alt="AWS" className="w-full h-full" />}
+              icon={<img src="/icons/aws-logo.png" alt="AWS" className="w-full h-full" />}
               name="AWS"
             />
             <AnimatedIcon
-              icon={<img src="/icons/snowflake.svg" alt="Snowflake" className="w-full h-full" />}
+              icon={<img src="/icons/snowflake-logo.png" alt="Snowflake" className="w-full h-full" />}
               name="Snowflake"
             />
             <AnimatedIcon
-              icon={<img src="/icons/glue.svg" alt="AWS Glue" className="w-full h-full" />}
+              icon={<img src="/icons/aws-glue-logo.png" alt="AWS Glue" className="w-full h-full" />}
               name="AWS Glue"
             />
             <AnimatedIcon
-              icon={<img src="/icons/lambda.svg" alt="AWS Lambda" className="w-full h-full" />}
+              icon={<img src="/icons/aws-lambda-logo.png" alt="AWS Lambda" className="w-full h-full" />}
               name="AWS Lambda"
             />
             <AnimatedIcon
-              icon={<img src="/icons/s3.svg" alt="Amazon S3" className="w-full h-full" />}
+              icon={<img src="/icons/aws-s3-logo.png" alt="Amazon S3" className="w-full h-full" />}
               name="Amazon S3"
             />
             <AnimatedIcon
-              icon={<img src="/icons/api.svg" alt="API" className="w-full h-full" />}
+              icon={<img src="/icons/api-logo.png" alt="API" className="w-full h-full" />}
               name="API"
             />
           </div>
