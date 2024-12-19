@@ -6,7 +6,7 @@ import BackgroundImage from './BackgroundImage';
 const DataWarehousing: React.FC = () => {
   return (
     <section id="data-warehousing" className="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
-      <BackgroundImage imageSrc="/images/data-warehousing-bg.png" translateY={[-40, 40]} />
+      <BackgroundImage imageSrc="./images/data-warehousing-bg.png" translateY={[-40, 40]} />
       <div className="w-full relative z-10 px-16">
         <h2 className="chapter-heading">Chapter 2: Organizing the Chaos</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -38,27 +38,27 @@ const DataWarehousing: React.FC = () => {
         </div>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
           <AnimatedIcon
-            icon={<img src="/icons/snowflake.svg" alt="Snowflake" className="w-full h-full" />}
+            icon={<img src="./icons/snowflake.svg" alt="Snowflake" className="w-full h-full" />}
             name="Snowflake"
           />
           <AnimatedIcon
-            icon={<img src="/icons/redshift.svg" alt="Redshift" className="w-full h-full" />}
+            icon={<img src="./icons/redshift.svg" alt="Redshift" className="w-full h-full" />}
             name="Redshift"
           />
           <AnimatedIcon
-            icon={<img src="/icons/spark.svg" alt="Apache Spark" className="w-full h-full" />}
+            icon={<img src="./icons/spark.svg" alt="Apache Spark" className="w-full h-full" />}
             name="Apache Spark"
           />
           <AnimatedIcon
-            icon={<img src="/icons/airflow.svg" alt="Apache Airflow" className="w-full h-full" />}
+            icon={<img src="./icons/airflow.svg" alt="Apache Airflow" className="w-full h-full" />}
             name="Apache Airflow"
           />
           <AnimatedIcon
-            icon={<img src="/icons/azure.svg" alt="Azure" className="w-full h-full" />}
+            icon={<img src="./icons/azure.svg" alt="Azure" className="w-full h-full" />}
             name="Azure"
           />
           <AnimatedIcon
-            icon={<img src="/icons/databricks.svg" alt="Databricks" className="w-full h-full" />}
+            icon={<img src="./icons/databricks.svg" alt="Databricks" className="w-full h-full" />}
             name="Databricks"
           />
         </div>

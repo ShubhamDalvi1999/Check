@@ -6,7 +6,7 @@ import BackgroundImage from './BackgroundImage';
 const DataVisualization: React.FC = () => {
   return (
     <section id="data-visualization" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <BackgroundImage imageSrc="/images/data-visualization-bg.png" translateY={[-50, 50]} />
+      <BackgroundImage imageSrc="./images/data-visualization-bg.png" translateY={[-50, 50]} />
       <div className="w-full relative z-10 px-16">
         <h2 className="chapter-heading">
           Chapter 3: Making Sense of the Data
@@ -42,23 +42,23 @@ const DataVisualization: React.FC = () => {
         </div>
         <div className="grid grid-cols-3 md:grid-cols-5 gap-8">
           <AnimatedIcon
-            icon={<img src="/icons/powerbi-logo.png" alt="Power BI" className="w-full h-full" />}
+            icon={<img src="./icons/powerbi-logo.png" alt="Power BI" className="w-full h-full" />}
             name="Power BI"
           />
           <AnimatedIcon
-            icon={<img src="/icons/tableau-logo.png" alt="Tableau" className="w-full h-full" />}
+            icon={<img src="./icons/tableau-logo.png" alt="Tableau" className="w-full h-full" />}
             name="Tableau"
           />
           <AnimatedIcon
-            icon={<img src="/icons/dax-logo.png" alt="DAX" className="w-full h-full" />}
+            icon={<img src="./icons/dax-logo.png" alt="DAX" className="w-full h-full" />}
             name="DAX"
           />
           <AnimatedIcon
-            icon={<img src="/icons/d3-logo.png" alt="D3.js" className="w-full h-full" />}
+            icon={<img src="./icons/d3-logo.png" alt="D3.js" className="w-full h-full" />}
             name="D3.js"
           />
           <AnimatedIcon
-            icon={<img src="/icons/plotly-logo.png" alt="Plotly" className="w-full h-full" />}
+            icon={<img src="./icons/plotly-logo.png" alt="Plotly" className="w-full h-full" />}
             name="Plotly"
           />
         </div>

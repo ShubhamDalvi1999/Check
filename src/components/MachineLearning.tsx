@@ -6,7 +6,7 @@ import BackgroundImage from './BackgroundImage';
 const MachineLearning: React.FC = () => {
   return (
     <section id="machine-learning" className="min-h-[70vh] flex items-center justify-center relative overflow-hidden -mt-16">
-      <BackgroundImage imageSrc="/images/machine-learning-bg.png" translateY={[-45, 45]} />
+      <BackgroundImage imageSrc="./images/machine-learning-bg.png" translateY={[-45, 45]} />
       <div className="w-full relative z-10 px-16">
         <h2 className="chapter-heading">
           Chapter 4: Predictive Analytics
@@ -50,27 +50,27 @@ const MachineLearning: React.FC = () => {
         </div>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
           <AnimatedIcon
-            icon={<img src="/icons/tensorflow.svg" alt="TensorFlow" className="w-full h-full" />}
+            icon={<img src="./icons/tensorflow.svg" alt="TensorFlow" className="w-full h-full" />}
             name="TensorFlow"
           />
           <AnimatedIcon
-            icon={<img src="/icons/pytorch.svg" alt="PyTorch" className="w-full h-full" />}
+            icon={<img src="./icons/pytorch.svg" alt="PyTorch" className="w-full h-full" />}
             name="PyTorch"
           />
           <AnimatedIcon
-            icon={<img src="/icons/scikit-learn.svg" alt="Scikit-learn" className="w-full h-full" />}
+            icon={<img src="./icons/scikit-learn.svg" alt="Scikit-learn" className="w-full h-full" />}
             name="Scikit-learn"
           />
           <AnimatedIcon
-            icon={<img src="/icons/pandas.svg" alt="Pandas" className="w-full h-full" />}
+            icon={<img src="./icons/pandas.svg" alt="Pandas" className="w-full h-full" />}
             name="Pandas"
           />
           <AnimatedIcon
-            icon={<img src="/icons/numpy.svg" alt="NumPy" className="w-full h-full" />}
+            icon={<img src="./icons/numpy.svg" alt="NumPy" className="w-full h-full" />}
             name="NumPy"
           />
           <AnimatedIcon
-            icon={<img src="/icons/matplotlib.svg" alt="Matplotlib" className="w-full h-full" />}
+            icon={<img src="./icons/matplotlib.svg" alt="Matplotlib" className="w-full h-full" />}
             name="Matplotlib"
           />
         </div>
