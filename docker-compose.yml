@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-app
+    ports:
+      - "8080:80"
+    restart: "no"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+    networks:
+      - app-network
+    volumes:
+      - nginx-logs:/var/log/nginx
+
+networks:
+  app-network:
+    driver: bridge
+    name: portfolio-network
+
+volumes:
+  nginx-logs:
+    name: portfolio-logs

@@ -11,14 +11,14 @@ export const initParallax = () => {
   layers.forEach((layer) => {
     const speed = (layer as HTMLElement).dataset.speed || '0';
     
-    window.addEventListener('scroll', () => {
-      if (window.innerWidth > 768) {
-        const yPos = window.scrollY * parseFloat(speed);
-        gsap.to(layer, {
-          y: yPos,
-          ease: 'none',
-          duration: 0.1
-        });
+    ScrollTrigger.create({
+      trigger: layer,
+      start: 'top bottom+=100%',
+      end: 'bottom top-=100%',
+      scrub: true,
+      onUpdate: (self) => {
+        const yPos = self.progress * parseFloat(speed) * window.innerHeight;
+        gsap.set(layer, { y: yPos });
       }
     });
   });

@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class',
   theme: {
@@ -21,11 +22,11 @@ module.exports = {
         accent: '#00bcd4',
       },
       animation: {
-        'fade-in-up': 'fadeInUp 0.5s ease-out',
+        'text': 'text 0.5s ease-out forwards',
       },
       keyframes: {
-        fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
+        text: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },

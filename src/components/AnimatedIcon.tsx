@@ -19,8 +19,12 @@ const AnimatedIcon: React.FC<AnimatedIconProps> = ({ icon, name }) => {
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="w-16 h-16 mb-2">{icon}</div>
-      <span className="text-sm font-medium">{name}</span>
+      <div className="w-48 h-48 mb-6 p-3 hover:scale-110 transition-transform">
+        <div className="w-full h-full rounded-lg overflow-hidden">
+          {icon}
+        </div>
+      </div>
+      <span className="text-3xl font-medium">{name}</span>
     </div>
   );
 };

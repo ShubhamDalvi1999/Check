@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import { Trophy, Star } from 'lucide-react';
+import BackgroundImage from './BackgroundImage';
 
 const achievements = [
   { title: '5-star rating on SQL and Python', platform: 'HackerRank' },
@@ -10,23 +11,27 @@ const achievements = [
 const AwardsAndAchievements: React.FC = () => {
   return (
     <section id="awards-achievements" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <Parallax translateY={[-90, 90]} className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-20"></div>
-      </Parallax>
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Awards & Achievements</h2>
+      <BackgroundImage imageSrc="./images/awards-bg.jpg" translateY={[-30, 30]} />
+      <div className="w-full relative z-10 px-16">
+        <h2 className="chapter-heading">
+          Awards & Achievements
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {achievements.map((achievement, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 {index === 0 ? (
-                  <Star className="w-8 h-8 mr-2 text-yellow-500" />
+                  <Star className="section-icon" />
                 ) : (
-                  <Trophy className="w-8 h-8 mr-2 text-yellow-500" />
+                  <Trophy className="section-icon" />
                 )}
-                <h3 className="text-xl font-semibold">{achievement.title}</h3>
+                <h3 className="section-heading">
+                  {achievement.title}
+                </h3>
               </div>
-              <p>{achievement.platform || achievement.year}</p>
+              <p className="section-text">
+                {achievement.platform || achievement.year}
+              </p>
             </div>
           ))}
         </div>

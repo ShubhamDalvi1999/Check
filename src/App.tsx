@@ -11,10 +11,11 @@ import CertificationsAndEducation from './components/CertificationsAndEducation'
 import AwardsAndAchievements from './components/AwardsAndAchievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FloatingContact from './components/FloatingContact';
 import { initParallax, initTextAnimations, initRippleEffect, handleResize } from './utils/parallax';
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [darkMode, setDarkMode] = React.useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -33,7 +34,7 @@ const App: React.FC = () => {
 
   return (
     <ParallaxProvider>
-      <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
+      <div className={`min-h-screen flex flex-col ${darkMode ? 'dark' : ''}`}>
         <div className="bg-background dark:bg-gray-900 text-text dark:text-white">
           <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <main className="parallax-container">
@@ -48,6 +49,7 @@ const App: React.FC = () => {
             <Contact />
           </main>
           <Footer />
+          <FloatingContact />
         </div>
       </div>
     </ParallaxProvider>
