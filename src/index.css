@@ -12,20 +12,18 @@
   }
 }
 
-/* Import a more standard, professional font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Import Google Fonts version of Goudy Old Style or a similar font */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'EB Garamond', 'Goudy Old Style', serif;  /* Use EB Garamond as fallback */
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .parallax-container {
@@ -43,7 +41,7 @@ body {
 /* Fix gaps between sections */
 section {
   margin: 0;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   min-height: auto;
 }
 
@@ -51,90 +49,66 @@ section {
 #data-collection {
   min-height: fit-content;
   margin: 0;
-  padding-top: 60px; /* Account for fixed header */
+  padding-top: 40px; /* Account for fixed header */
 }
 
 /* Fix container spacing */
 .container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1280px;
-  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   section {
-    padding: 1.5rem 0;
-  }
-  .container {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 2rem 0;
   }
 }
 
 /* Adjust section heights */
 .content-section {
   min-height: fit-content;
-  padding: 2rem 0;
+  padding: 0.75rem 0;
   display: flex;
   align-items: center;
 }
 
+/* Responsive height adjustments */
+@media (min-height: 800px) {
+  .content-section {
+    padding: 1rem 0;
+  }
+}
+
 /* Chapter headings */
 .chapter-heading {
-  @apply text-4xl md:text-5xl font-bold mb-6 text-center text-primary dark:text-white animate-text tracking-tight;
+  @apply text-5xl md:text-7xl font-bold mb-8 text-center text-primary dark:text-white animate-text tracking-tight;
 }
 
 /* Sub headings */
 .section-heading {
-  @apply text-2xl font-semibold mb-4 text-primary dark:text-white animate-text tracking-tight;
+  @apply text-3xl font-semibold mb-6 text-primary dark:text-white animate-text tracking-tight;
 }
 
 /* Section text */
 .section-text {
-  @apply text-base md:text-lg dark:text-gray-300 animate-text leading-relaxed;
+  @apply text-2xl dark:text-gray-300 animate-text leading-relaxed;
 }
 
 /* Project heading */
 .project-heading {
-  @apply text-3xl font-semibold mb-6 text-primary dark:text-white animate-text tracking-tight;
+  @apply text-5xl font-semibold mb-8 text-primary dark:text-white animate-text tracking-tight;
 }
 
 /* Project text */
 .project-text {
-  @apply text-lg dark:text-gray-300 animate-text leading-relaxed;
+  @apply text-3xl dark:text-gray-300 animate-text leading-relaxed;
 }
 
 /* Section icons */
 .section-icon {
-  @apply w-12 h-12 mb-4 text-accent;
-}
-
-/* Standard icon sizes */
-.icon-sm {
-  @apply w-4 h-4;
-}
-
-.icon-md {
-  @apply w-6 h-6;
-}
-
-.icon-lg {
-  @apply w-8 h-8;
-}
-
-/* Image sizes */
-.img-sm {
-  @apply w-24 h-24 object-cover;
-}
-
-.img-md {
-  @apply w-48 h-48 object-cover;
-}
-
-.img-lg {
-  @apply w-96 h-96 object-cover;
+  @apply w-24 h-24 mb-8 text-accent;
 }
 
 /* Floating contact button animation */
@@ -149,12 +123,12 @@ section {
 
 /* Reduce spacing for later sections */
 section:not(:first-child) {
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 
 /* Additional spacing reduction for certifications and contact sections */
 #certifications-education,
 #contact {
-  margin-top: -2rem;
-  padding-top: 1rem;
+  margin-top: -4rem;
+  padding-top: 0;
 } 
