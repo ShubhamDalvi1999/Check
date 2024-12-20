@@ -16,7 +16,7 @@ export const initParallax = () => {
       start: 'top bottom+=100%',
       end: 'bottom top-=100%',
       scrub: true,
-      onUpdate: (self: gsap.ScrollTriggerInstance) => {
+      onUpdate: (self) => {
         const yPos = self.progress * parseFloat(speed) * window.innerHeight;
         gsap.set(layer, { y: yPos });
       }
