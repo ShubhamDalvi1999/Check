@@ -1,3 +1,6 @@
+/* Import Google Fonts version of Goudy Old Style or a similar font */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,9 +14,6 @@
     @apply opacity-100 translate-y-0;
   }
 }
-
-/* Import Google Fonts version of Goudy Old Style or a similar font */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
