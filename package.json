@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "vite",
+    "dev": "next dev",
     "build": "next build",
-    "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "docker:build": "docker build -t portfolio-app .",
     "docker:run": "docker run -p 8080:80 portfolio-app",
@@ -35,8 +34,6 @@
     "postcss-loader": "^7.3.3"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.16",
-    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.14",
     "@types/tailwindcss": "^3.1.0",
     "postcss": "^8.4.24",
