@@ -46,11 +46,14 @@ export const initTextAnimations = () => {
 export const initRippleEffect = () => {
   if (window.innerWidth > 768) {
     try {
-      $('.ripple-effect').ripples({
-        resolution: 512,
-        dropRadius: 20,
-        perturbance: 0.04
-      });
+      const $ripple = $('.ripple-effect') as JQuery<HTMLElement>;
+      if ($ripple.length) {
+        $ripple.ripples({
+          resolution: 512,
+          dropRadius: 20,
+          perturbance: 0.04
+        });
+      }
     } catch (error) {
       console.warn('Ripples effect could not be initialized:', error);
     }
@@ -61,7 +64,10 @@ export const handleResize = () => {
   ScrollTrigger.refresh();
   if (window.innerWidth <= 768) {
     try {
-      $('.ripple-effect').ripples('destroy');
+      const $ripple = $('.ripple-effect') as JQuery<HTMLElement>;
+      if ($ripple.length) {
+        $ripple.ripples('destroy');
+      }
     } catch (error) {
       console.warn('Could not destroy ripples:', error);
     }

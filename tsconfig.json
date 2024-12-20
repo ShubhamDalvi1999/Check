@@ -21,6 +21,10 @@
     "typeRoots": [
       "./node_modules/@types",
       "./src/types"
+    ],
+    "types": [
+      "jquery",
+      "node"
     ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/types/**/*.d.ts"],
