@@ -12,14 +12,12 @@
   }
 }
 
-@font-face {
-  font-family: 'Goudy Old Style';
-  src: url('/fonts/GoudyOldStyle-Regular.ttf') format('truetype');
-}
+/* Import Google Fonts version of Goudy Old Style or a similar font */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Goudy Old Style', serif;
+  font-family: 'EB Garamond', 'Goudy Old Style', serif;  /* Use EB Garamond as fallback */
 }
 
 body {
