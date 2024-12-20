@@ -10,9 +10,11 @@ const skills = [
 ];
 
 const ToolsAndSkills: React.FC = () => {
+  const basePath = import.meta.env.BASE_URL;
+
   return (
     <section id="tools-skills" className="min-h-[70vh] flex items-center justify-center relative overflow-hidden -mt-16">
-      <BackgroundImage imageSrc="./images/skills-bg.jpg" translateY={[-30, 30]} />
+      <BackgroundImage imageSrc={`${basePath}images/skills-bg.jpg`} translateY={[-30, 30]} />
       <div className="w-full relative z-10 px-16">
         <h2 className="chapter-heading">
           Chapter 5: Tools & Skills

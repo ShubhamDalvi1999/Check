@@ -5,9 +5,9 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: process.env.GITHUB_PAGES ? `/${process.env.NEXT_PUBLIC_BASE_PATH}/` : '/',
+  base: mode === 'production' ? '/shubham-dalvi-portfolio-git-host/' : '/',
   build: {
     outDir: 'out',
     emptyOutDir: true,
@@ -30,4 +30,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-}); 
+})); 
