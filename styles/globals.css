@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animate-text {
+    @apply opacity-0 transform translate-y-4 transition-all duration-500 ease-out;
+  }
+  /* ... rest of your CSS content ... */
+} 
