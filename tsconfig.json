@@ -21,6 +21,13 @@
     "typeRoots": [
       "./node_modules/@types",
       "./src/types"
+    ],
+    "types": [
+      "node",
+      "react",
+      "react-dom",
+      "next",
+      "gsap"
     ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/types/**/*.d.ts"],
