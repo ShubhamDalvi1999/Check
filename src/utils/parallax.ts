@@ -16,7 +16,7 @@ export const initParallax = () => {
       start: 'top bottom+=100%',
       end: 'bottom top-=100%',
       scrub: true,
-      onUpdate: (self) => {
+      onUpdate: (self: gsap.ScrollTriggerInstance) => {
         const yPos = self.progress * parseFloat(speed) * window.innerHeight;
         gsap.set(layer, { y: yPos });
       }
@@ -31,7 +31,7 @@ export const initTextAnimations = () => {
     ScrollTrigger.create({
       trigger: element,
       start: 'top 80%',
-      onEnter: () => {
+      onUpdate: () => {
         gsap.to(element, {
           opacity: 1,
           y: 0,
