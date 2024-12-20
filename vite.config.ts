@@ -7,13 +7,19 @@ import autoprefixer from 'autoprefixer';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === 'production' ? '/shubham-dalvi-portfolio-git-host/' : '/',
+  base: './',
   build: {
     outDir: 'out',
     emptyOutDir: true,
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        assetFileNames: './assets/[name].[hash][extname]',
+        chunkFileNames: './assets/[name].[hash].js',
+        entryFileNames: './assets/[name].[hash].js',
       },
     },
   },
@@ -27,7 +33,7 @@ export default defineConfig(({ mode }) => ({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
 })); 

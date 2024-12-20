@@ -2,16 +2,14 @@ import React from 'react';
 import BackgroundImage from './BackgroundImage';
 
 const Hero: React.FC = () => {
-  const basePath = import.meta.env.BASE_URL;
-
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-48">
-      <BackgroundImage imageSrc={`${basePath}images/hero-bg.jpg`} translateY={[-20, 20]} />
+      <BackgroundImage imageSrc="../images/hero-bg.jpg" translateY={[-20, 20]} />
       <div className="w-full relative z-10 px-16">
         <div className="flex items-center justify-center space-x-8">
           <div className="h-[900px] w-[750px] relative">
             <img 
-              src={`${basePath}icons/napkin-selection.png`}
+              src="../icons/napkin-selection.png"
               alt="Napkin" 
               className="h-full w-full object-cover rounded-lg transform -rotate-12 shadow-lg"
             />
