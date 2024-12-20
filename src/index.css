@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animate-text {
+    @apply opacity-0 transform translate-y-4 transition-all duration-500 ease-out;
+  }
+
+  .animate-text.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+/* Import Google Fonts version of Goudy Old Style or a similar font */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'EB Garamond', 'Goudy Old Style', serif;  /* Use EB Garamond as fallback */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.section {
+  padding: 4rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Fix gaps between sections */
+section {
+  margin: 0;
+  padding: 0.5rem 0;
+  min-height: auto;
+}
+
+/* Ensure proper spacing in DataCollection component */
+#data-collection {
+  min-height: fit-content;
+  margin: 0;
+  padding-top: 40px; /* Account for fixed header */
+}
+
+/* Fix container spacing */
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+}
+
+/* Adjust section heights */
+.content-section {
+  min-height: fit-content;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive height adjustments */
+@media (min-height: 800px) {
+  .content-section {
+    padding: 1rem 0;
+  }
+}
+
+/* Chapter headings */
+.chapter-heading {
+  @apply text-5xl md:text-7xl font-bold mb-8 text-center text-primary dark:text-white animate-text tracking-tight;
+}
+
+/* Sub headings */
+.section-heading {
+  @apply text-3xl font-semibold mb-6 text-primary dark:text-white animate-text tracking-tight;
+}
+
+/* Section text */
+.section-text {
+  @apply text-2xl dark:text-gray-300 animate-text leading-relaxed;
+}
+
+/* Project heading */
+.project-heading {
+  @apply text-5xl font-semibold mb-8 text-primary dark:text-white animate-text tracking-tight;
+}
+
+/* Project text */
+.project-text {
+  @apply text-3xl dark:text-gray-300 animate-text leading-relaxed;
+}
+
+/* Section icons */
+.section-icon {
+  @apply w-24 h-24 mb-8 text-accent;
+}
+
+/* Floating contact button animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Reduce spacing for later sections */
+section:not(:first-child) {
+  margin-top: -2rem;
+}
+
+/* Additional spacing reduction for certifications and contact sections */
+#certifications-education,
+#contact {
+  margin-top: -4rem;
+  padding-top: 0;
+} 
